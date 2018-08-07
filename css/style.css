@@ -1,3 +1,11 @@
+/* 
+  Colors:
+
+  Light: #B8DBD9
+  Dark: #48987D
+*/
+
+
 * {
   margin: 0;
   padding: 0;
@@ -9,5 +17,82 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
+  color: #777;
+  padding: 10px;
 }
 
+.header {
+  height: 95vh;
+  background-size: cover;
+  background-image: linear-gradient(
+    to top,
+    rgba(184, 219, 217, 0.8), 
+    rgba(72, 152, 125, 0.8)), 
+    url(../img/skbuildings.jpg);
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 75% 95%, 75% 100%, 65% 95%, 0% 95%);
+}
+
+.logo-box {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.logo {
+  height: 150px;
+}
+
+.primary {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.primary-main {
+  display: block;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 30px;
+  
+  animation: moveInTop 1s;
+}
+
+.primary-second {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 25px;
+  text-align: center;
+
+  animation: moveInBottom 1s;
+}
+
+.heading-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px)
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0)
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100px)
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0)
+  }
+}
