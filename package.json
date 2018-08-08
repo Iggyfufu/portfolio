@@ -20,5 +20,6 @@
   "homepage": "https://github.com/Iggyfufu/website#readme",
   "devDependencies": {
     "node-sass": "^4.9.2"
-  }
+  },
+  "dependencies": {}
 }
