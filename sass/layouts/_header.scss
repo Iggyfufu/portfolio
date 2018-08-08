@@ -1,0 +1,22 @@
+.header {
+  height: 95vh;
+  background-size: cover;
+  background-image: linear-gradient(
+    to top,
+    rgba($color-primary, 0.8), 
+    rgba($color-secondary, 0.8)), 
+    url(../img/skbuildings.jpg);
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 75% 95%, 75% 100%, 65% 95%, 0% 95%);
+
+  & .logo-box {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    & .logo {
+      height: 150px;
+    }
+  }
+}
