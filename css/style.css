@@ -181,7 +181,7 @@ body {
   height: 28rem;
   width: 23rem;
   position: relative;
-  margin: 2rem; }
+  margin: 2rem 2rem; }
   .card__side {
     transition: all 1s ease;
     width: 100%;
@@ -296,13 +296,15 @@ body {
       height: 150px; }
 
 .cards-container {
-  position: relative; }
+  position: relative;
+  display: flex;
+  justify-content: center; }
   .cards-container .cards {
     position: absolute;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between; }
+    justify-content: space-around; }
 
 .footer {
   background-color: #777;
@@ -358,15 +360,17 @@ body {
   top: 3.9rem;
   right: 6rem;
   z-index: 2000;
-  box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.4); }
+  box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.4);
+  text-align: center;
+  cursor: pointer; }
 
 .navigation__background {
   height: 5rem;
   width: 5rem;
   border-radius: 50%;
   position: fixed;
-  top: 4.4rem;
-  right: 6.5rem;
+  top: 3.9rem;
+  right: 6.3rem;
   background-image: radial-gradient(#B8DBD9, #48987D);
   z-index: 1000;
   transition: transform .5s ease; }
@@ -409,3 +413,38 @@ body {
   background-position: 100%;
   color: #48987D;
   transform: translateX(1rem); }
+
+.navigation__icon {
+  position: relative;
+  margin-top: 2.6rem; }
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    width: 2.5rem;
+    height: 2px;
+    background-color: #4b4c4c;
+    display: inline-block; }
+  .navigation__icon::before, .navigation__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .2s; }
+  .navigation__icon::before {
+    top: -.8rem; }
+  .navigation__icon::after {
+    top: .8rem; }
+
+.navigation__button:hover .navigation__icon::before {
+  top: -1rem; }
+
+.navigation__button:hover .navigation__icon::after {
+  top: 1rem; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  top: 0;
+  transform: rotate(135deg); }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+  top: 0;
+  transform: rotate(-135deg); }
