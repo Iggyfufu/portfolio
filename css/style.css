@@ -75,6 +75,9 @@ body {
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
+.fab {
+  color: #ffffff; }
+
 .u-center-text {
   text-align: center; }
 
@@ -177,7 +180,8 @@ body {
   -moz-perspective: 150rem;
   height: 28rem;
   width: 23rem;
-  position: relative; }
+  position: relative;
+  margin: 2rem; }
   .card__side {
     transition: all 1s ease;
     width: 100%;
@@ -196,6 +200,8 @@ body {
       transform: rotateY(180deg); }
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #777, #000000); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #FFC5B5, #FFA17F); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -208,6 +214,8 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #777, #000000), url(../img/gamesstacked.jpg); }
+    .card__picture--2 {
+      background-image: linear-gradient(to right bottom, #FFC5B5, #FFA17F), url(../img/bobatone.jpg); }
   .card__heading {
     font-size: 1.8rem;
     font-weight: 400;
@@ -223,7 +231,9 @@ body {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .card__heading-span-1 {
-      background-image: linear-gradient(to right bottom, rgba(119, 119, 119, 0.85), rgba(0, 0, 0, 0.85)), url(../img/gamesstacked.jpg); }
+      background-image: linear-gradient(to right bottom, rgba(119, 119, 119, 0.85), rgba(0, 0, 0, 0.85)); }
+    .card__heading-span-2 {
+      background-image: linear-gradient(to right bottom, rgba(255, 197, 181, 0.85), rgba(255, 161, 127, 0.85)); }
   .card__details {
     padding: .5rem; }
     .card__details ul {
@@ -236,6 +246,27 @@ body {
         padding: .6rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
+  .card__links {
+    position: relative;
+    height: 100%; }
+    .card__links ul {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      list-style: none;
+      margin: 0 auto;
+      text-align: center;
+      width: 80%; }
+      .card__links ul li {
+        text-align: center;
+        font-size: 1.1rem;
+        padding: .6rem; }
+        .card__links ul li:not(:last-child) {
+          border-bottom: 1px solid #eee; }
+  .card__link {
+    color: #ffffff;
+    text-decoration: none; }
 
 .header {
   height: 95vh;
@@ -255,4 +286,7 @@ body {
 .cards-container {
   position: relative; }
   .cards-container .cards {
-    position: absolute; }
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
