@@ -8,6 +8,7 @@
     url(../img/skbuildings.jpg);
   background-position: top;
   position: relative;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80vh, 75% 80vh, 75% 100%, 65% 80vh, 0% 80vh);
   clip-path: polygon(0% 0%, 100% 0%, 100% 80vh, 75% 80vh, 75% 100%, 65% 80vh, 0% 80vh);
 
   & .logo-box {
