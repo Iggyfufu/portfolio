@@ -12,3 +12,20 @@
     }
   }
 }
+
+.about-images {
+  position: relative;
+  width: 35vw;
+}
+
+.section-projects {
+  padding: 25rem 0;
+  background-size: cover;
+  background-image: linear-gradient(
+    to top,
+    rgba($color-primary, 0.8), 
+    rgba($color-secondary, 0.8)), 
+    url(../img/skbuildings.jpg);
+  position: relative;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80vh, 75% 80vh, 75% 100%, 65% 80vh, 0% 80vh);
+}

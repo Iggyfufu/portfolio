@@ -91,6 +91,17 @@ body {
     .section-about .about-content-container .about-text {
       width: 50vw; }
 
+.about-images {
+  position: relative;
+  width: 35vw; }
+
+.section-projects {
+  padding: 25rem 0;
+  background-size: cover;
+  background-image: linear-gradient(to top, rgba(184, 219, 217, 0.8), rgba(72, 152, 125, 0.8)), url(../img/skbuildings.jpg);
+  position: relative;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80vh, 75% 80vh, 75% 100%, 65% 80vh, 0% 80vh); }
+
 .btn:link, .btn:visited {
   display: inline-block;
   text-transform: capitalize;
@@ -132,6 +143,30 @@ body {
 .btn-animated {
   animation: moveInBottom 1s ease-out .75s;
   animation-fill-mode: backwards; }
+
+.composition-photo {
+  width: 55%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+  transition: all .2s; }
+  .composition-photo-p1 {
+    left: 0;
+    top: -5rem; }
+  .composition-photo-p2 {
+    right: 0;
+    top: -3rem; }
+  .composition-photo-p3 {
+    left: 20%;
+    top: 4rem; }
+  .composition-photo:hover {
+    transform: scale(1.05) translateY(-0.5rem);
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.6);
+    z-index: 20; }
+
+.about-images:hover .composition-photo:not(:hover) {
+  transform: scale(0.95); }
 
 .header {
   height: 95vh;
