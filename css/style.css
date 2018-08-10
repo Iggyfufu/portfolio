@@ -202,6 +202,8 @@ body {
         background-image: linear-gradient(to right bottom, #777, #000000); }
       .card__side--back-2 {
         background-image: linear-gradient(to right bottom, #FFC5B5, #FFA17F); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #A8C0FF, #5998FF); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -216,6 +218,8 @@ body {
       background-image: linear-gradient(to right bottom, #777, #000000), url(../img/gamesstacked.jpg); }
     .card__picture--2 {
       background-image: linear-gradient(to right bottom, #FFC5B5, #FFA17F), url(../img/bobatone.jpg); }
+    .card__picture--3 {
+      background-image: linear-gradient(to right bottom, #A8C0FF, #5998FF), url(../img/katacards.jpg); }
   .card__heading {
     font-size: 1.8rem;
     font-weight: 400;
@@ -234,6 +238,8 @@ body {
       background-image: linear-gradient(to right bottom, rgba(119, 119, 119, 0.85), rgba(0, 0, 0, 0.85)); }
     .card__heading-span-2 {
       background-image: linear-gradient(to right bottom, rgba(255, 197, 181, 0.85), rgba(255, 161, 127, 0.85)); }
+    .card__heading-span-3 {
+      background-image: linear-gradient(to right bottom, rgba(168, 192, 255, 0.85), rgba(89, 152, 255, 0.85)); }
   .card__details {
     padding: .5rem; }
     .card__details ul {

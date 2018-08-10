@@ -33,6 +33,11 @@
       &-2 {
         background-image: linear-gradient(to right bottom, $color-boba-light, $color-boba-dark);
       }
+
+      &-3 {
+        background-image: linear-gradient(to right bottom, $color-kata-light, $color-kata-dark);
+      }
+
     }
   }
 
@@ -62,6 +67,13 @@
         linear-gradient(to right bottom, $color-boba-light, $color-boba-dark),
         url(../img/bobatone.jpg)
     }
+
+    &--3 {
+      background-image: 
+        linear-gradient(to right bottom, $color-kata-light, $color-kata-dark),
+        url(../img/katacards.jpg)
+    }
+
   }
 
   &__heading {
@@ -87,6 +99,10 @@
 
     &-2 {
       background-image: linear-gradient(to right bottom, rgba($color-boba-light, .85), rgba($color-boba-dark, .85))
+    }
+
+    &-3 {
+      background-image: linear-gradient(to right bottom, rgba($color-kata-light, .85), rgba($color-kata-dark, .85))
     }
 
   }
