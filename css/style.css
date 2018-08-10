@@ -75,7 +75,7 @@ body {
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
-.fab {
+.card__link > .fab {
   color: #ffffff; }
 
 .u-center-text {
@@ -103,11 +103,11 @@ body {
 
 .section-projects {
   padding: 10rem 0;
-  height: 95vh;
+  height: 75vh;
   background-size: cover;
   background-image: linear-gradient(to top, rgba(184, 219, 217, 0.8), rgba(72, 152, 125, 0.8)), url(../img/skbuildings.jpg);
   position: relative;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 75% 90%, 75% 100%, 65% 90%, 0% 90%); }
+  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 75% 85%, 75% 100%, 65% 85%, 0% 85%); }
 
 .btn:link, .btn:visited {
   display: inline-block;
@@ -204,6 +204,8 @@ body {
         background-image: linear-gradient(to right bottom, #FFC5B5, #FFA17F); }
       .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #A8C0FF, #5998FF); }
+      .card__side--back-4 {
+        background-image: linear-gradient(to right bottom, #A1CDA8, #627264); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -220,6 +222,8 @@ body {
       background-image: linear-gradient(to right bottom, #FFC5B5, #FFA17F), url(../img/bobatone.jpg); }
     .card__picture--3 {
       background-image: linear-gradient(to right bottom, #A8C0FF, #5998FF), url(../img/katacards.jpg); }
+    .card__picture--4 {
+      background-image: linear-gradient(to right bottom, #A1CDA8, #627264), url(../img/pep.jpg); }
   .card__heading {
     font-size: 1.8rem;
     font-weight: 400;
@@ -240,6 +244,8 @@ body {
       background-image: linear-gradient(to right bottom, rgba(255, 197, 181, 0.85), rgba(255, 161, 127, 0.85)); }
     .card__heading-span-3 {
       background-image: linear-gradient(to right bottom, rgba(168, 192, 255, 0.85), rgba(89, 152, 255, 0.85)); }
+    .card__heading-span-4 {
+      background-image: linear-gradient(to right bottom, rgba(161, 205, 168, 0.85), rgba(98, 114, 100, 0.85)); }
   .card__details {
     padding: .5rem; }
     .card__details ul {
@@ -295,4 +301,40 @@ body {
     position: absolute;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: space-between; }
+
+.footer {
+  background-color: #777;
+  padding: 10rem 0;
+  font-size: 1.4rem;
+  margin-top: -13rem;
+  height: 60vh; }
+  .footer__logo-box {
+    text-align: center; }
+  .footer__logo {
+    width: 25rem;
+    height: auto; }
+  .footer__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin: 0 auto;
+    border-top: 1px solid #f7f7f7;
+    padding-top: 2rem; }
+  .footer__link {
+    color: #ffffff; }
+    .footer__link:hover, .footer__link:active {
+      color: #48987D; }
+    .footer__link > .fab,
+    .footer__link > .fas {
+      font-size: 3rem; }
+      .footer__link > .fab:hover, .footer__link > .fab:active,
+      .footer__link > .fas:hover,
+      .footer__link > .fas:active {
+        transition: all .5s ease;
+        transform: scale(2);
+        text-shadow: 0 2px 1.1rem rgba(0, 0, 0, 0.4);
+        -webkit-background-clip: text;
+        background-clip: text; }

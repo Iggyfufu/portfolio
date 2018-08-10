@@ -1,0 +1,49 @@
+.footer {
+  background-color: $color-gray;
+  padding: 10rem 0;
+  font-size: 1.4rem;
+  margin-top: -13rem;
+  height: 60vh;
+  
+  &__logo-box {
+    text-align: center;
+  }
+
+  &__logo {
+    width: 25rem;
+    height: auto;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin: 0 auto;
+    border-top: 1px solid $color-light-gray;
+    padding-top: 2rem;
+  }
+
+  &__link {
+    color: $color-white;
+
+    &:hover,
+    &:active {
+      color: $color-secondary;
+    }
+
+    &>.fab,
+    &>.fas {
+      font-size: 3rem;
+
+      &:hover,
+      &:active, {
+        transition: all .5s ease;
+        transform: scale(2);
+        text-shadow: 0 2px 1.1rem rgba($color-black, .4);
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+    }
+  }
+}

@@ -20,7 +20,7 @@
 
 .section-projects {
   padding: 10rem 0;
-  height: 95vh;
+  height: 75vh;
   background-size: cover;
   background-image: linear-gradient(
     to top,
@@ -28,5 +28,5 @@
     rgba($color-secondary, 0.8)), 
     url(../img/skbuildings.jpg);
   position: relative;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 75% 90%, 75% 100%, 65% 90%, 0% 90%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 75% 85%, 75% 100%, 65% 85%, 0% 85%);
 }
