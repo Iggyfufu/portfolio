@@ -3,12 +3,26 @@
   padding: 20rem 0;
   margin-top: -20vh;
 
+  @include phone-screens {
+    padding: 25rem 0;
+  }
+
   & .about-content-container {
     display: flex;
     justify-content: space-around;
 
+    @include phone-screens {
+      flex-direction: column;
+      text-align: center;
+    } 
+
     & .about-text {
       width: 50vw;
+
+      @include phone-screens {
+        width: 100%;
+        margin-bottom: 7rem;
+      }
     }
   }
 }
@@ -16,6 +30,10 @@
 .about-images {
   position: relative;
   width: 35vw;
+
+  @include phone-screens {
+    width: 100%;
+  }
 }
 
 .section-projects {
@@ -26,7 +44,28 @@
     to top,
     rgba($color-primary, 0.8), 
     rgba($color-secondary, 0.8)), 
-    url(../img/skbuildings.jpg);
+    url(../img/skriver.jpg);
   position: relative;
   clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 75% 85%, 75% 100%, 65% 85%, 0% 85%);
+
+  @include large-screens {
+    height: 90rem;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 75% 90%, 75% 100%, 65% 90%, 0% 90%);
+  }
+
+  @include ipad-land {
+    height: 80rem;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 75% 90%, 75% 100%, 65% 90%, 0% 90%);
+  }
+
+  @include nar-screen-project {
+    height: 160rem;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 75% 95%, 75% 100%, 65% 95%, 0% 95%);
+  }
+
+  @include phone-screens {
+    height: 150rem;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 75% 95%, 75% 100%, 65% 95%, 0% 95%);
+  }
+
 }

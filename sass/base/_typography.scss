@@ -4,6 +4,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+
+  @include phone-screens {
+    top: 50%;
+  }
   
   & .primary {
     color: $color-white;
@@ -16,6 +20,23 @@
       letter-spacing: 30px;
       
       animation: moveInTop 1s;
+
+
+      @include laptop-screens {
+        font-size: 40px;
+      }
+
+      @include med-screens {
+        padding-left: 30px;
+      }
+
+
+      @include phone-screens {
+        padding-left: 25px;
+        margin-bottom: 1rem;
+        font-size: 20px;
+      }
+
     }
 
     & .primary-second {
@@ -23,10 +44,22 @@
       font-size: 20px;
       font-weight: 700;
       letter-spacing: 25px;
-      text-align: center;
       margin-bottom: 60px;
 
       animation: moveInBottom 1s;
+
+      @include laptop-screens {
+        font-size: 15px;
+      };
+
+      @include med-screens {
+        padding-left: 30px;
+      }
+
+      @include phone-screens {
+        padding-left: 25px;
+        font-size: 10px;
+      };
     }
   }
 }

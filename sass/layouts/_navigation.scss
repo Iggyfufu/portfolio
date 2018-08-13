@@ -24,6 +24,11 @@
     box-shadow: 0 .3rem .8rem rgba($color-black, .4);
     text-align: center;
     cursor: pointer;
+
+    @include phone-screens {
+      top: 2rem;
+      right: 2rem;
+    }
   }
 
   &__background {
@@ -36,6 +41,11 @@
     background-image: radial-gradient($color-primary, $color-secondary);
     z-index: 1000;
     transition: transform .5s ease;
+
+    @include phone-screens {
+      top: 2.1rem;
+      right: 2.1rem;
+    }
   }
 
   &__nav {

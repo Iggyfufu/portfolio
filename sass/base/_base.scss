@@ -8,6 +8,14 @@
 
 html {
   font-size: 80.5%;
+
+  @include laptop-screens {
+    font-size: 70.5%;
+  };
+
+  @include ipad-port {
+    font-size: 65.5%;
+  }
 }
 
 body {
@@ -16,4 +24,9 @@ body {
   line-height: 1.7;
   color: $color-gray;
   padding: 20px;
+  margin: 0;
+
+  @include phone-screens {
+    padding: 5px;
+  };
 }

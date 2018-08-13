@@ -16,8 +16,17 @@
     top: 10px;
     left: 10px;
 
+    @include phone-screens {
+      top: 5px;
+      left: -20px;
+    };
+
     & .logo {
       height: 150px;
+
+      @include phone-screens {
+        height: 100px;
+      }
     }
   }
 }

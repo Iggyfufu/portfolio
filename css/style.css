@@ -7,13 +7,23 @@
 
 html {
   font-size: 80.5%; }
+  @media (min-width: 1557px) {
+    html {
+      font-size: 70.5%; } }
+  @media (max-width: 768px) {
+    html {
+      font-size: 65.5%; } }
 
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
   color: #777;
-  padding: 20px; }
+  padding: 20px;
+  margin: 0; }
+  @media (max-width: 575px) {
+    body {
+      padding: 5px; } }
 
 @keyframes moveInTop {
   0% {
@@ -37,6 +47,9 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center; }
+  @media (max-width: 575px) {
+    .heading-box {
+      top: 50%; } }
   .heading-box .primary {
     color: #ffffff;
     text-transform: uppercase; }
@@ -46,14 +59,34 @@ body {
       font-weight: 400;
       letter-spacing: 30px;
       animation: moveInTop 1s; }
+      @media (min-width: 1557px) {
+        .heading-box .primary .primary-main {
+          font-size: 40px; } }
+      @media (max-width: 1260px) {
+        .heading-box .primary .primary-main {
+          padding-left: 30px; } }
+      @media (max-width: 575px) {
+        .heading-box .primary .primary-main {
+          padding-left: 25px;
+          margin-bottom: 1rem;
+          font-size: 20px; } }
     .heading-box .primary .primary-second {
       display: block;
       font-size: 20px;
       font-weight: 700;
       letter-spacing: 25px;
-      text-align: center;
       margin-bottom: 60px;
       animation: moveInBottom 1s; }
+      @media (min-width: 1557px) {
+        .heading-box .primary .primary-second {
+          font-size: 15px; } }
+      @media (max-width: 1260px) {
+        .heading-box .primary .primary-second {
+          padding-left: 30px; } }
+      @media (max-width: 575px) {
+        .heading-box .primary .primary-second {
+          padding-left: 25px;
+          font-size: 10px; } }
 
 .heading-primary {
   font-size: 3.5rem;
@@ -91,23 +124,53 @@ body {
   background-color: #f7f7f7;
   padding: 20rem 0;
   margin-top: -20vh; }
+  @media (max-width: 575px) {
+    .section-about {
+      padding: 25rem 0; } }
   .section-about .about-content-container {
     display: flex;
     justify-content: space-around; }
+    @media (max-width: 575px) {
+      .section-about .about-content-container {
+        flex-direction: column;
+        text-align: center; } }
     .section-about .about-content-container .about-text {
       width: 50vw; }
+      @media (max-width: 575px) {
+        .section-about .about-content-container .about-text {
+          width: 100%;
+          margin-bottom: 7rem; } }
 
 .about-images {
   position: relative;
   width: 35vw; }
+  @media (max-width: 575px) {
+    .about-images {
+      width: 100%; } }
 
 .section-projects {
   padding: 10rem 0;
   height: 75vh;
   background-size: cover;
-  background-image: linear-gradient(to top, rgba(184, 219, 217, 0.8), rgba(72, 152, 125, 0.8)), url(../img/skbuildings.jpg);
+  background-image: linear-gradient(to top, rgba(184, 219, 217, 0.8), rgba(72, 152, 125, 0.8)), url(../img/skriver.jpg);
   position: relative;
   clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 75% 85%, 75% 100%, 65% 85%, 0% 85%); }
+  @media (max-width: 1430px) {
+    .section-projects {
+      height: 90rem;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 75% 90%, 75% 100%, 65% 90%, 0% 90%); } }
+  @media (max-width: 1300px) {
+    .section-projects {
+      height: 80rem;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 75% 90%, 75% 100%, 65% 90%, 0% 90%); } }
+  @media (max-width: 605px) {
+    .section-projects {
+      height: 160rem;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 75% 95%, 75% 100%, 65% 95%, 0% 95%); } }
+  @media (max-width: 575px) {
+    .section-projects {
+      height: 150rem;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 75% 95%, 75% 100%, 65% 95%, 0% 95%); } }
 
 .btn:link, .btn:visited {
   display: inline-block;
@@ -292,8 +355,15 @@ body {
     position: absolute;
     top: 10px;
     left: 10px; }
+    @media (max-width: 575px) {
+      .header .logo-box {
+        top: 5px;
+        left: -20px; } }
     .header .logo-box .logo {
       height: 150px; }
+      @media (max-width: 575px) {
+        .header .logo-box .logo {
+          height: 100px; } }
 
 .cards-container {
   position: relative;
@@ -312,6 +382,9 @@ body {
   font-size: 1.4rem;
   margin-top: -13rem;
   height: 60vh; }
+  @media (max-width: 1260px) {
+    .footer {
+      margin-top: -16rem; } }
   .footer__logo-box {
     text-align: center; }
   .footer__logo {
@@ -363,6 +436,10 @@ body {
   box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.4);
   text-align: center;
   cursor: pointer; }
+  @media (max-width: 575px) {
+    .navigation__button {
+      top: 2rem;
+      right: 2rem; } }
 
 .navigation__background {
   height: 5rem;
@@ -374,6 +451,10 @@ body {
   background-image: radial-gradient(#B8DBD9, #48987D);
   z-index: 1000;
   transition: transform .5s ease; }
+  @media (max-width: 575px) {
+    .navigation__background {
+      top: 2.1rem;
+      right: 2.1rem; } }
 
 .navigation__nav {
   height: 100vh;

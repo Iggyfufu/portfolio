@@ -4,6 +4,10 @@
   font-size: 1.4rem;
   margin-top: -13rem;
   height: 60vh;
+
+  @include med-screens {
+    margin-top: -16rem;
+  }
   
   &__logo-box {
     text-align: center;

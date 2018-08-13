@@ -1,0 +1,41 @@
+@mixin laptop-screens {
+  @media (min-width: 1557px) {
+    @content
+  };
+};
+
+@mixin large-screens {
+  @media (max-width: 1430px) {
+    @content
+  };  
+};
+
+@mixin med-screens {
+  @media (max-width: 1260px) {
+    @content
+  };
+};
+
+@mixin phone-screens {
+  @media (max-width: 575px) {
+    @content
+  };
+};
+
+@mixin nar-screen-project {
+  @media (max-width: 605px) {
+    @content
+  };
+};
+
+@mixin ipad-port {
+  @media (max-width: 768px) {
+    @content
+  };
+};
+
+@mixin ipad-land {
+  @media (max-width: 1300px) {
+    @content
+  };
+};
