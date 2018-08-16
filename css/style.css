@@ -418,7 +418,7 @@ body {
   display: none; }
 
 .navigation__checkbox:checked ~ .navigation__background {
-  transform: scale(55); }
+  transform: scale(100); }
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
