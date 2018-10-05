@@ -46,6 +46,7 @@
     rgba($color-secondary, 0.8)), 
     url(../img/skriver.jpg);
   position: relative;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 75% 85%, 75% 100%, 65% 85%, 0% 85%);
   clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 75% 85%, 75% 100%, 65% 85%, 0% 85%);
 
   @include large-screens {
