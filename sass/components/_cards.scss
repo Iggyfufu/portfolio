@@ -14,9 +14,10 @@
     top: 0;
     left: 0;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     overflow: hidden;
     border-radius: 5px;
-    box-shadow: 0 .5rem 4rem rgba($color-black, .8);
+    box-shadow: 0 .2rem 1rem rgba($color-black, .8);
 
     &--front {
       background-color: $color-white;
