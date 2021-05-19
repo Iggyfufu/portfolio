@@ -4,4 +4,4 @@ Personal Website
 My personal website. First time trying out Sass. 
 
 
-Check it out at `www.kennethzhu.com`
+Check it out at `https://iggyfufu.github.io/`
